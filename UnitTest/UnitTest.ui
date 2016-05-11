@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UnitTestClass</class>
+ <widget class="QDialog" name="UnitTestClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>420</width>
+    <height>255</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>UnitTest</string>
+  </property>
+  <widget class="QPushButton" name="m_btnUqerAccess">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>优矿数据源</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="UnitTest.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>m_btnUqerAccess</sender>
+   <signal>clicked()</signal>
+   <receiver>UnitTestClass</receiver>
+   <slot>slot_BtnUqerAccess()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>44</x>
+     <y>21</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>64</x>
+     <y>137</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slot_BtnUqerAccess()</slot>
+ </slots>
+</ui>
